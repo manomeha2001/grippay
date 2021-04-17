@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="static/home.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Hungry Human</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body{
+            font-family: 'Bebas Neue', cursive;
+            background-image: url("assets/hungerback.jpg");
+            min-height: 100%;
+            background-attachment: fixed;
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .uk-navbar-left{
+           padding-top: 2vh; 
+        }
+        .transparent{
+            background: black;
+        }
+        .uk-navbar-item p:hover{
+            text-decoration: underline;
+        }
+        .uk-active p{
+            color: black;
+            background-color: white;
+            text-decoration: underline;
+            padding:1vh;
+            border-radius: 0.5vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="position: fixed;width: 100%;z-index: 1;" class="uk-navbar-container uk-navbar-transparent transparent" uk-navbar>
+            <div uk-scrollspy-nav="closest: .uk-navbar-item; scroll: true" style="width: 100;" class="uk-navbar-left">
+                <div class="uk-navbar-item">
+                    <a style="text-decoration: none; color: white; font-size: x-large; font-family: 'Bebas Neue', cursive;" href='#home'><p id="p1" >Home</p></a>
+                </div>
+                <div class="uk-navbar-item">
+                    <a style="text-decoration: none; color: white; font-size: x-large; font-family: 'Bebas Neue', cursive;" href='#about'><p id="p2">About Us</p></a>
+                </div>
+                <div class="uk-navbar-item">
+                    <a style="text-decoration: none; color: white; font-size: x-large; font-family: 'Bebas Neue', cursive;" href='#donate'><p id="p2">Donate</p></a>
+                </div>
+                <div class="uk-navbar-item">
+                    <a style="text-decoration: none; color: white; font-size: x-large; font-family: 'Bebas Neue', cursive;" href='#contact'><p id='p3'>Contact</p></a>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    
+
+    <section uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .anim; delay: 200; repeat: true" class="uk-animation-slide-bottom-small" style="padding-top:25vh; padding-bottom: 25vh; display: flex;justify-content: center;align-items: center;flex-direction: column;" id='home' tabindex=0>
+
+        <div class=" anim" tabindex="0">
+            <h1 style="font-size: 15vh; color: white; padding:1vh; background-color: rgba(38,38,38,0.5); font-weight: bolder; font-family: 'Bebas Neue', cursive; margin-top:5vh ;" class="uk-text-center caption">The Sparks Trust</h1>
+        </div>
+
+        <div class=" anim">
+            <p style="font-size: 6vh; color: white; font-weight: bolder; font-family: 'Bebas Neue', cursive; margin-top:1vh ;" class="uk-text-center uk-text-italic hashtag">
+                #NoHungryHuman
+            </p>
+        </div>
+
+        <div  class=" uk-container-small anim">
+            <p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive; margin-top:1vh ;" class="uk-text-center homebody">
+                690 million people are going hungry, 2 billion suffer from malnutrition, but there is enough food, knowledge and resources for all. And what's more, food is a human right. Since its establishment The Sparks Trust has used various strategies to eradicate global hunger by 2030.
+            </p>
+        </div>
+
+
+        
+    </section>
+
+    <section uk-scrollspy="cls: uk-animation-slide-left-medium; target: .uk-card; delay: 200; repeat: true" style="padding-top:25vh; padding-bottom: 25vh;display: flex;justify-content: center;align-items: center;flex-direction: column;" id='about'>
+
+        <div class="uk-container-small">
+        <div class="uk-card">
+            <div style="background-color: black;" class="uk-card-body">
+                <h3 style="font-size: 6vh; color: white; font-family: 'Bebas Neue', cursive; margin-top:5vh ;" class="uk-card-title">India’s most trusted online donation platform</h3>
+                <p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive; margin-top:1vh ;">On our platform, you can donate to a nonprofit with confidence. Our robust due diligence process covers legal, compliance, financial and impact checks for each donation made to any non-profit, including in-person visits to beneficiaries and actual feedback reports. We do all this so that our donors can trust that their giving is indeed doing what it's supposed to do - change lives.</p>
+                <p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive; margin-top:1vh ;">Here is why you should donate through The Sparks Trust:</p>
+                <ul>
+                    <li><p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive;">Simple - Give at a click of a button.</p></li>
+                    <li><p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive;">Convenience - Contribute monthly with ease.</p></li>
+                    <li><p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive;">Scale - Make a big impact with your small amounts. Donate as little.</p></li>
+                    <li><p style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive;"> Receive instant e-receipt on every donation.</p></li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+        
+
+    </section>
+
+    <section uk-scrollspy="cls: uk-animation-slide-right-medium; target: .don; delay: 200; repeat: true" style="padding-top:40vh; padding-bottom: 25vh;display: flex;justify-content: center;align-items: center;flex-direction: column;" id="donate">
+
+        <div style="display: flex;justify-content: center;align-items: center;" class="uk-container-large don">
+            <div>
+                <h3 style="font-size: 6vh; color: white; font-weight: bolder; font-family: 'Bebas Neue', cursive;" class="uk-text-center"><i class="fa fa-quote-left"></i></h3>
+            </div>
+            <div>
+                <h3 style="font-size: 6vh; color: white; font-weight: bolder; font-family: 'Bebas Neue', cursive; margin-top:5vh; margin-left: 1vw; margin-right: 1vw;" class="uk-text-center">A man's true wealth is the good he does to the world.</h3>
+            </div>
+            <div>
+                <h3 style="font-size: 6vh; color: white; font-weight: bolder; font-family: 'Bebas Neue', cursive;" class="uk-text-center"><i class="fa fa-quote-right"></i></h3>
+            </div>
+        </div>
+
+        <div class="don" style="padding:2vh; background-color: black; margin-top: 5vh; display: flex;justify-content: center;align-items: center;flex-direction: column;">
+            <h3 style="font-size: 2vh; margin-bottom: 0vh; color: white; font-family: 'Bebas Neue', cursive;" class="uk-text-center">Start your donation journey.</h3>            
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Gzgd7yfbq1zmSb" async> </script> </form>
+        </div>
+
+    </section>
+
+    <section uk-scrollspy="cls: uk-animation-slide-left-medium; target: .cont; delay: 200; repeat: true" style="padding-top:25vh; padding-bottom: 25vh;display: flex;justify-content: center;align-items: center;flex-direction: column;" id='contact'>
+        
+        <div class="uk-container-small cont">
+
+            <h3 class="uk-text-center" style="font-size: 6vh; color: white; font-weight: bolder; font-family: 'Bebas Neue', cursive; margin-top:5vh ;" >Our Office</h3>
+            <p class="uk-text-center" style="font-size: 3vh; color: white; font-family: 'Bebas Neue', cursive;">The Sparks Trust - Chennai, India<br>#21, Elite Towers, 7th Floor, A-14,<br>Old Mahabalipuram Road,<br>Behind Adyar Tech Park,<br>Adyar,<br>Chennai-600034</p>
+        </div>    
+        <div class="uk-container-large cont">
+            <p class="uk-text-center" style="font-size: 2vh; color: white; font-family: 'Bebas Neue', cursive;">For any queries, reach us out at email : info@thesparktrust.org</p>
+        </div>
+        <div class="uk-container-large cont">    
+            <p class="uk-text-center uk-text-italic" style="font-size: 2vh; color: white; font-family: 'Bebas Neue', cursive;">We are now on WhatsApp! Add 9534219003 to your contact list & say hello to subscribe. Get stories of people who need nothing more than your voice - a simple share.</p>
+        </div>
+        
+        
+        
+    </section>
+
+
+
+ 
+</body>
+</html>
